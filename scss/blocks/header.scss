@@ -1,0 +1,431 @@
+.menu{
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: $color1;
+  overflow: auto;
+  z-index: 2;
+  padding: 80px 0 0 20px ;
+  transition: all 0.3s ease 0s;
+  @media (max-width: $mobile_xsmall) {
+    width: 250px;
+  }
+  li{
+    margin: 10px 0 0 0;
+  }
+  a{
+    text-decoration: none;
+  }
+}
+.menu.active{
+  top: 0;
+  padding-top: 75px;
+}
+.header {
+  padding: 22px 0 28px 0;
+  z-index: 3;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  @media (max-width: $tablet) {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+  @media (max-width: $mobile) {
+    padding-top: 10px;
+  }
+  &-burger{
+    display: block;
+    position: relative;
+    left: 10px;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+
+    @media (max-width: $mobile) {
+      margin-left: 5px;
+    }
+    &:before,
+    &:after{
+      content: '';
+      background-color: $color2;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+    }
+    &:before{
+      top: 0;
+    }
+    &:after{
+      bottom: 0;
+    }
+    span{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $color2;
+      top: 9px;
+      transition: all 0.3s ease 0s;
+    }
+  }
+  &-burger.active span{
+    transform: scale(0);
+  }
+  &-burger.active:before{
+    transform: rotate(45deg);
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  &-burger.active:after{
+    transform: rotate(-45deg);
+    bottom: 9px;
+    transition: all 0.3s ease 0s;
+  }
+
+
+
+  &-logo{
+    position: relative;
+    width: 620px;
+    z-index: 4;
+    @media (max-width: 1440px) {
+      width: 470px;
+    }
+    @media (max-width: 1190px) {
+      width: 404px;
+    }
+    @media (max-width: $mobile) {
+     margin-left: 30px;
+    }
+    @media (max-width: 1110px) {
+      width: 190px;
+    }
+    @media (max-width: $mobile_xsmall) {
+      width: 150px;
+    }
+
+    .h3{
+      @media (max-width: 1110px) {
+        display: none;
+      }
+    }
+    a{
+      width: 400px;
+      @media (max-width: 1441px) {
+        width: 265px;
+      }
+      @media (max-width: 1191px) {
+        width: 200px;
+      }
+      @media (max-width: $mobile) {
+        width: 300px;
+      }
+    }
+  }
+
+  .container {
+    @media (max-width: 1440px) {
+      padding: 0 60px;
+    }
+    @media (max-width: $mobile) {
+      padding: 0 1%;
+    }
+    &:before {
+      height: 134px;
+      width: 148px;
+      top: -22px;
+      left: -208px;
+      position: absolute;
+      content: "";
+      background: url('../img/brus.jpg') no-repeat right center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      @media (max-width: 1736px) {
+        display: none;
+      }
+    }
+  }
+
+  &-contacts{
+    width: 580px;
+    @media (max-width: $screen) {
+      width: 570px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 14px;
+      width: 562px;
+    }
+    @media (max-width: 930px) {
+      width:530px;
+    }
+    @media (max-width: 886px) {
+      width:200px;
+    }
+    @media (max-width: $mobile) {
+      width: 180px;
+    }
+    @media (max-width: $mobile_small) {
+      width: 50px;
+    }
+
+    &>div{
+      width: 362px;
+      &:first-child{
+        @media (max-width: 930px) {
+          width: 330px;
+        }
+        @media (max-width: 886px) {
+          display: none;
+        }
+      }
+      &:nth-child(2){
+        width: 200px;
+        @media (max-width: $mobile) {
+          width: 160px;
+        }
+        div{
+          @media (max-width: $mobile_small) {
+            display: none;
+          }
+        }
+        a{
+          text-decoration: none;
+        }
+        span{
+          @media (max-width: $mobile) {
+            display: none;
+          }
+        }
+      }
+    }
+
+
+    &--info{
+      position: relative;
+      color: $color2;
+      margin-left: 10px;
+      flex: 1;
+      font-size: 16px;
+      line-height: 1.5;
+      @media (max-width: 930px) {
+        font-size: 14px;
+      }
+      @media (max-width: $mobile) {
+       right: -46px;
+      }
+
+      &:before{
+        position: absolute;
+        left:-10px;
+        top: 0;
+        content: '';
+        display: block;
+        width: 2px;
+        background: $color2;
+        height: 50px;
+        opacity: .6;
+        @media (max-width: 930px) {
+         top: -5px;
+        }
+        @media (max-width: $mobile) {
+          display: none;
+          right: 0;
+        }
+      }
+    }
+
+    .icon{
+      font-size: 50px;
+      color: $color2;
+      margin-right: 5px;
+      box-sizing: border-box;
+      max-width: 400px;
+      opacity: .3;
+    }
+    &--phone{
+      height: 30px;
+      .icon-phone{
+        font-size: 40px;
+        color: $color2;
+        font-weight: 500;
+        opacity: inherit;
+      }
+    }
+  }
+}
+
+
+  // bun animations
+  .hamburglar.is-open {
+    .burger-bun-top {
+      animation: bun-top-out 0.6s linear normal;
+      animation-fill-mode: forwards;
+    }
+
+    .burger-bun-bot {
+      animation: bun-bot-out 0.6s linear normal;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .hamburglar.is-closed {
+    .burger-bun-top {
+      animation: bun-top-in 0.6s linear normal;
+      animation-fill-mode: forwards;
+    }
+
+    .burger-bun-bot {
+      animation: bun-bot-in 0.6s linear normal;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes bun-top-out {
+    0% {
+      left: 0;
+      top: 0;
+      transform: rotate(0deg);
+    }
+    20% {
+      left: 0;
+      top: 0;
+      transform: rotate(15deg);
+    }
+    80% {
+      left: -5px;
+      top: 0;
+      transform: rotate(-60deg);
+    }
+    100% {
+      left: -5px;
+      top: 1px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  @keyframes bun-bot-out {
+    0% {
+      left: 0;
+      transform: rotate(0deg);
+    }
+    20% {
+      left: 0;
+      transform: rotate(-15deg);
+    }
+    80% {
+      left: -5px;
+      transform: rotate(60deg);
+    }
+    100% {
+      left: -5px;
+      transform: rotate(45deg);
+    }
+  }
+
+
+  @keyframes bun-top-in {
+    0% {
+      left: -5px;
+      bottom: 0;
+      transform: rotate(-45deg);
+    }
+    20% {
+      left: -5px;
+      bottom: 0;
+      transform: rotate(-60deg);
+    }
+    80% {
+      left: 0;
+      bottom: 0;
+      transform: rotate(15deg);
+    }
+    100% {
+      left: 0;
+      bottom: 1px;
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes bun-bot-in {
+    0% {
+      left: -5px;
+      transform: rotate(45deg);
+    }
+    20% {
+      left: -5px;
+      bottom: 0;
+      transform: rotate(60deg);
+    }
+    80% {
+      left: 0;
+      bottom: 0;
+      transform: rotate(-15deg);
+    }
+    100% {
+      left: 0;
+      transform: rotate(0deg);
+    }
+  }
+
+
+  // burger filling
+  .hamburglar.is-open {
+    .burger-filling {
+      animation: burger-fill-out 0.6s linear normal;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .hamburglar.is-closed {
+    .burger-filling {
+      animation: burger-fill-in 0.6s linear normal;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes burger-fill-in {
+    0% {
+      width: 0;
+      left: 36px;
+    }
+    40% {
+      width: 0;
+      left: 40px;
+    }
+    80% {
+      width: 36px;
+      left: -6px;
+    }
+    100% {
+      width: 36px;
+      left: 0px;
+    }
+  }
+
+  @keyframes burger-fill-out {
+    0% {
+      width: 36px;
+      left: 0px;
+    }
+    20% {
+      width: 42px;
+      left: -6px;
+    }
+
+    40% {
+      width: 0;
+      left: 40px;
+    }
+
+    100% {
+      width: 0;
+      left: 36px;
+    }
+  }
+

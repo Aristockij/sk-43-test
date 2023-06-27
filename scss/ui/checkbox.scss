@@ -1,0 +1,145 @@
+/*
+
+Checkboxes
+
+*/
+
+
+.checkboxes {
+    @include clearfix;
+    margin-top: 4px;
+    text-align: left;
+
+    & + .form__error {
+        padding-left: 30px;
+    }
+
+    &__inner {
+        float: left;
+        width: 100%;
+        margin-bottom: -12px;
+    }
+}
+
+.checkbox {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    text-align: left;
+    //color: $color0;
+    cursor: pointer;
+    transition: all $ts;
+    font-size: 12px;
+    line-height: 1.3;
+
+    a{
+        color: $color0;
+    }
+
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        content: '';
+        transition: all $ts;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background: #fff;
+        border: 1px solid $color0;
+        width: 12px;
+        height: 12px;
+
+    }
+
+    & > input[type='radio'],
+    & > input[type='checkbox'] {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    &:hover {
+
+
+    }
+
+    &.focused {
+
+
+    }
+
+    &.disabled {
+        cursor: default;
+        cursor: not-allowed;
+
+        .checkbox__icon {
+            //border-color: #ebebeb;
+            //background-color: #ebebeb;
+            box-shadow: none;
+        }
+    }
+
+    .form__error {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.checkbox.checked .checkbox__icon:before,
+.checkbox-plain-js.checked .checkbox__icon:before {
+    position: absolute;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-right: 0;
+    background: center center no-repeat;
+    background-size: contain;
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    content: '';
+    background-image: url("../img/icons/Mark.svg");
+    border-radius: 50%;
+    top:50%;
+    left:50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.checkbox--radio {
+
+    .checkbox__icon {
+        border-radius: 50%;
+    }
+}
+
+.checkbox--block {
+    width: 100%;
+    margin-right: 0;
+}
+
+.checkbox--inline {
+    display: inline;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.checkbox--separate {
+    width: 20px;
+    height: 20px;
+    padding-left: 0;
+    margin: -6px 0;
+    user-select: none;
+
+    .checkbox__icon {
+        top: 0;
+
+        &:after {
+            top: 7px;
+        }
+    }
+}

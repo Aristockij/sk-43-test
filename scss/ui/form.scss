@@ -1,0 +1,119 @@
+.form {
+  position: relative;
+  @include clearfix;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form--items {
+  padding: 20px 40px;
+
+  @media (max-width: $mobile_small) {
+    padding: 20px 20px;
+  }
+}
+
+.form--title{
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $color0;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form--caption{
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.form--item {
+  position: relative;
+  margin-bottom: 15px;
+
+  &.horizontal{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 7px;
+
+    .form--item-label{
+      width: 16%;
+      margin-bottom:0;
+      text-align: right;
+      padding-left: 0;
+      padding-top: 10px;
+    }
+
+    .form--item-field{
+      width: 80%;
+      margin-top: 0;
+    }
+
+  }
+}
+.form--item-label {
+  display: block;
+  font-size: 15px;
+  color: $color1;
+  font-weight: 600;
+  margin-bottom: 5px;
+
+  & + .checkboxes {
+    margin-top: 0;
+  }
+}
+.form--item-field {
+  position: relative;
+}
+.form--error {
+  padding: 2px 0 0;
+  color: red;
+  font-size: 11px;
+  font-weight: 400;
+  animation: 0.5s ease-out;
+  animation-iteration-count: 2;
+  animation-fill-mode: both;
+  animation-delay: 0.3s;
+  animation-name: pulsateError;
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  .form--item-field--error-absolute & {
+    @include position(absolute, 100% 0 null 0);
+  }
+}
+
+
+
+
+
+.form--actions {
+  position: relative;
+  margin-top: 10px;
+  text-align: left;
+}
+
+
+@keyframes pulsateError {
+
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
+
+}

@@ -1,0 +1,359 @@
+{% extends "./includes/layout.twig" %}
+
+{% block content %}
+    <div class="menu-border"></div>
+    <nav class="header-menu header-menu__active container cols cols--acenter">
+
+        <div class="cols">
+            <ul class="header-menu--main cols cols--acenter">
+                <li>
+                    <a href="/"><span class="icon icon-menu"></span></a>
+                </li>
+                <li>
+                    <a href="/">
+                        Услуги
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Проекты
+                    </a>
+                </li>
+                <li>
+                    <a href="/">Реализованные проекты</a>
+                </li>
+                <li>
+                    <a href="/">
+                        Проодажа пиломатериала
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        О компании
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Технологии
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+            <div class="header-menu--home">
+                <a href="/">
+                    <span class="icon icon-home"></span>
+                    главная
+                </a>
+            </div>
+        </div>
+        <div class="navigation">
+            <nav>
+                <ul class="cols">
+                    <li>
+                        <a href="">Главная</a>
+                    </li>
+                    -
+                    <li>
+                        <a href="">Услуги</a>
+                    </li>
+                    -
+                    <li>
+                        <a href=""> Проект дома Д-35</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+    <!--section1-->
+
+    <section class="project_detail">
+        <div class="project_detail-border">
+        </div>
+        <div class="container cols">
+            <div class="project_detail_d35">
+                Д-35
+            </div>
+            <div class="project_detail-left">
+                <img src="/img/project_detail/home1.jpg" alt="">
+            </div>
+            <div class="project_detail-right">
+                <div class="h2">
+                    проект дома <span>д-35</span>
+                </div>
+                <div class="detail-parameters cols">
+                    <div>
+                        Площадь: <span> 156 м<sup>2</sup> </span>
+                    </div>
+                    <div>
+                        Размер: <span> 7,2 / 8,9 м </span>
+                    </div>
+                </div>
+                <div class="detail_border"></div>
+                <div class="detail-parameters cols">
+                    <div class="cols">
+                        спальни:
+                        <div>
+                            <span>2</span>
+                            <img src="img/project_detail/Bed.svg" alt="bed">
+                        </div>
+                    </div>
+                    <div class="cols">
+                        Санузлы:
+                        <div>
+                            <span>2</span>
+                             <img src="img/project_detail/Bathroom.svg" alt="bed">
+                        </div>
+                    </div>
+                </div>
+                <div class="price cols cols--start cols--acenter">
+                    <span><img src="img/icons/noun_price.svg" alt="" class="noun_price"></span><span> 1 517 000 </span> <span class="rubl"> ₽</span><span class="price_star">*</span>
+                </div>
+                <p>
+                    Указана стоимость проекта, выполненого из оцилиндрованного бревна. Проект также может быть выполнен из других материалов.
+                </p>
+                <div class="popular-projects--btn">
+                    <a class="btn1" href="/">
+                        <span class="bold">Получить</span> коммерческое предложение
+                        <span class="icon icon-left_1"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--section2-->
+    <section class="details container">
+        <div class="details-title">Визуализация</div>
+
+        <div class="swiper-slider"
+             data-slider-slides-per-view="3"
+             data-slider-breakpoints='{"600": {"slidesPerView": 1, "spaceBetween": 15},"780": {"slidesPerView": 2, "spaceBetween":30},"1050": {"slidesPerView": 2, "spaceBetween": 20}, "1340": {"slidesPerView": 3, "spaceBetween": 10}}'
+             data-slider-centered-slides=""
+             data-slider-slides-per-group="1"
+             data-slider-effect=""
+             data-slider-loop="false"
+             data-slider-autoplay="false"
+             data-slider-speed="1000"
+             data-slider-grabcursor="true"
+             data-slider-space-between="50">
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide details--info">
+                            <img src="img/project_detail/swap1.jpg" alt="" />
+                        </div>
+
+                        <div class="swiper-slide details--info">
+                            <img src="img/project_detail/swap2.jpg" alt="" />
+                        </div>
+
+                        <div class="swiper-slide details--info">
+                            <img src="img/project_detail/swap3.jpg" alt="" />
+                        </div>
+
+                        <div class="swiper-slide details--info">
+                            <img src="img/project_detail/swap3.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        <div class="details-title">Фасады</div>
+
+        <div class="swiper-slider"
+             data-slider-slides-per-view=3
+             data-slider-breakpoints='{"600": {"slidesPerView": 1, "spaceBetween": 15},"780": {"slidesPerView": 2, "spaceBetween":30},"1050": {"slidesPerView": 2, "spaceBetween": 20}, "1340": {"slidesPerView": 3, "spaceBetween": 10}}'
+             data-slider-centered-slides=""
+             data-slider-slides-per-group="1"
+             data-slider-effect=""
+             data-slider-loop="false"
+             data-slider-autoplay="false"
+             data-slider-speed="1000"
+             data-slider-grabcursor="true"
+             data-slider-space-between="50">
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide details--info">
+                        <img src="img/project_detail/fas1.jpg" alt="" />
+                    </div>
+
+                    <div class="swiper-slide details--info">
+                        <img src="img/project_detail/fas2.jpg" alt="" />
+                    </div>
+
+                    <div class="swiper-slide details--info">
+                        <img src="img/project_detail/fas3.jpg" alt="" />
+                    </div>
+
+                    <div class="swiper-slide details--info">
+                        <img src="img/project_detail/fas3.jpg" alt="" />
+                    </div>
+                    <div class="swiper-slide details--info">
+                        <img src="img/project_detail/fas3.jpg" alt="" />
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="details-title">Планировка</div>
+
+        <div class="swiper-slider"
+             data-slider-slides-per-view=2
+             data-slider-breakpoints='{"600": {"slidesPerView": 1, "spaceBetween": 15},"780": {"slidesPerView": 2, "spaceBetween":30},"1050": {"slidesPerView": 2, "spaceBetween": 20}, "1340": {"slidesPerView": 3, "spaceBetween": 10}}'
+             data-slider-centered-slides=""
+             data-slider-slides-per-group="1"
+             data-slider-effect=""
+             data-slider-loop="false"
+             data-slider-autoplay="false"
+             data-slider-speed="1000"
+             data-slider-grabcursor="true"
+             data-slider-space-between="10">
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide ">
+                        <img src="img/project_detail/plane.jpg" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="img/project_detail/plane1.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+    </section>
+    <div class="equipment_border">
+    </div>
+    <section class="equipment container">
+        <div class="equipment-item cols">
+            <div class="h4">
+                Комплектация
+            </div>
+            <div class="item-btn active" data-tab="1">
+                Оцилиндрованное бревно
+            </div>
+            <div class="item-btn" data-tab="2">
+                Профилированный брус
+            </div>
+            <div class="item-btn" data-tab="3">
+                Клееный брус
+            </div>
+        </div>
+        <div class="equipment-text active" data-tab="1">
+            <p>
+                Указана примерная стоимость строительства “под отделку”.
+                <br>В неё включено:
+            </p>
+            <ol>
+                <li>
+                    Проект1
+                </li>
+                <li>
+                    Монтаж стен из оцилиндрованного бревна диаметром 220мм
+                    <ul>
+                        <li>обработка огнебиозащитным составом</li>
+                        <li>межвенцовый утеплитель - Политерм Премиум</li>
+                    </ul>
+                </li>
+                <li>
+                    Монтаж мощных балок перекрытия из бруса 100x200мм и больше
+                    <br>(расчитано на нагрузку 300-500кг\м.кв)
+                </li>
+                <li>
+                    Монтаж временной кровли (под рубероид)
+                </li>
+            </ol>
+        </div>
+        <div class="equipment-text" data-tab="2">
+            <p>
+                Указана примерная стоимость строительства “под отделку”.
+                <br>В неё включено:
+            </p>
+            <ol>
+                <li>
+                    Проект2
+                </li>
+                <li>
+                    Монтаж стен из оцилиндрованного бревна диаметром 220мм
+                    <ul>
+                        <li>обработка огнебиозащитным составом</li>
+                        <li>межвенцовый утеплитель - Политерм Премиум</li>
+                    </ul>
+                </li>
+                <li>
+                    Монтаж мощных балок перекрытия из бруса 100x200мм и больше
+                    <br>(расчитано на нагрузку 300-500кг\м.кв)
+                </li>
+                <li>
+                    Монтаж временной кровли (под рубероид)
+                </li>
+            </ol>
+        </div>
+        <div class="equipment-text" data-tab="3">
+            <p>
+                Указана примерная стоимость строительства “под отделку”.
+                <br>В неё включено:
+            </p>
+            <ol>
+                <li>
+                    Проект3
+                </li>
+                <li>
+                    Монтаж стен из оцилиндрованного бревна диаметром 220мм
+                    <ul>
+                        <li>обработка огнебиозащитным составом</li>
+                        <li>межвенцовый утеплитель - Политерм Премиум</li>
+                    </ul>
+                </li>
+                <li>
+                    Монтаж мощных балок перекрытия из бруса 100x200мм и больше
+                    <br>(расчитано на нагрузку 300-500кг\м.кв)
+                </li>
+                <li>
+                    Монтаж временной кровли (под рубероид)
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section class="project_detail-realized">
+        <div class="h4 container">Реализация проекта:</div>
+            <div class="wrapper-grid--realized">
+                <a href="javascript:;" data-fancybox="gal1" data-src="img/project_detail/var1.jpg" class="one">
+                    <img src="img/project_detail/var1.jpg" alt="" class="one">
+                </a>
+                <a href="javascript:;" data-fancybox="gal1" data-src="img/project_detail/var2.jpg" class="two">
+                    <img src="img/project_detail/var2.jpg" alt="" class="two">
+                </a>
+                <a href="javascript:;" data-fancybox="gal1" data-src="img/project_detail/var3.jpg" class="three">
+                    <img src="img/project_detail/var3.jpg" alt="" class="three">
+                </a>
+                <a href="javascript:;" data-fancybox="gal1" data-src="img/project_detail/var4.jpg" class="four">
+                    <img src="img/project_detail/var4.jpg" alt="" class="four">
+                </a>
+                <a href="javascript:;" data-fancybox="gal1" data-src="img/project_detail/var5.jpg" class="five">
+                    <img src="img/project_detail/var5.jpg" alt="" class="five">
+                </a>
+                <a href="javascript:;" data-fancybox="gal1" data-src="img/project_detail/var6.jpg" class="six">
+                    <img src="img/project_detail/var6.jpg" alt="" class="six">
+                </a>
+                <a href="javascript:;" data-fancybox="gal1" data-src="img/project_detail/var7.jpg" class="seven">
+                    <img src="img/project_detail/var7.jpg" alt="" class="seven">
+                </a>
+            </div>
+    </section>
+{% endblock %}

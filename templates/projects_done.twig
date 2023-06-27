@@ -1,0 +1,553 @@
+{% extends "./includes/layout.twig" %}
+
+{% block content %}
+    <div class="menu-border"></div>
+    <nav class="header-menu header-menu__active container cols cols--acenter">
+
+        <div class="cols">
+            <ul class="header-menu--main cols cols--acenter">
+                <li>
+                    <a href="/"><span class="icon icon-menu"></span></a>
+                </li>
+                <li>
+                    <a href="/">
+                        Услуги
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Проекты
+                    </a>
+                </li>
+                <li>
+                    <a href="/">Реализованные проекты</a>
+                </li>
+                <li>
+                    <a href="/">
+                        Проодажа пиломатериала
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        О компании
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Технологии
+                    </a>
+                </li>
+                <li>
+                    <a href="/">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+            <div class="header-menu--home">
+                <a href="/">
+                    <span class="icon icon-home"></span>
+                    главная
+                </a>
+            </div>
+        </div>
+        <div class="navigation">
+            <nav>
+                <ul class="cols">
+                    <li>
+                        <a href=""> Главная </a>
+                    </li>
+                    -
+                    <li>
+                        <a href=""> Реализованные проекты </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </nav>
+    <!--section1-->
+    <div class="swiper-slider swiper-slider--active swiper-slider--main"
+         data-slider-slides-per-view="1"
+         data-slider-centered-slides="false"
+         data-slider-slides-per-group="1"
+         data-slider-effect="fade"
+         data-slider-loop="true"
+         data-slider-autoplay="false"
+         data-slider-speed="1000"
+         data-slider-grabcursor="false"
+         data-slider-space-between="0">
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide cols">
+
+                    <div class="main-slider-img main-slider-img--active img-to-bg">
+                    </div>
+                    <div class="main-slider-info">
+                        <div>
+                            <div class="h4">
+                                храм в честь
+                                <br>святителя николая
+                            </div>
+                            <div class="main-slider-info-sub">
+                                Самарская область
+                            </div>
+                            <p class="another_color-p">
+                                Оцилиндрованное бревно,
+                                диаметр - 300 мм.
+                            </p>
+                            <a href="/" class="btn">
+                                Подробнее
+                            </a>
+                            <div class="main-slider-info--arrow">
+                                <span class="icon icon-left"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide cols">
+
+                    <div class="main-slider-img main-slider-img--active img-to-bg">
+                    </div>
+                    <div class="main-slider-info">
+                        <div>
+                            <div class="h4">
+                                храм в честь
+                                <br>святителя николая
+                            </div>
+                            <div class="main-slider-info-sub">
+                                Самарская область
+                            </div>
+                            <p class="another_color-p">
+                                Оцилиндрованное бревно,
+                                диаметр - 300 мм.
+                            </p>
+                            <a href="/" class="btn">
+                                Подробнее
+                            </a>
+                            <div class="main-slider-info--arrow">
+                                <span class="icon icon-left"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide cols">
+
+                    <div class="main-slider-img main-slider-img--active img-to-bg">
+                    </div>
+                    <div class="main-slider-info">
+                        <div>
+                            <div class="h4">
+                                храм в честь
+                                <br>святителя николая
+                            </div>
+                            <div class="main-slider-info-sub">
+                                Самарская область
+                            </div>
+                            <p class="another_color-p">
+                                Оцилиндрованное бревно,
+                                диаметр - 300 мм.
+                            </p>
+                            <a href="/" class="btn">
+                                Подробнее
+                            </a>
+                            <div class="main-slider-info--arrow">
+                                <span class="icon icon-left"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!--section2-->
+    <section class="confidence-home confidence-home--filter">
+        <div class="confidence-home--border">
+            <div class="container">
+                <div class="choice-filter h4">
+                    Подбор проектов по параметрам
+                </div>
+                    <div class="filter cols">
+                        <div class="range ">
+                            <span class="filter_title">Площадь</span>
+                            <div class="range-slider">
+                                <input type="text" class="js-range-slider" value="" />
+                            </div>
+                            <div class="extra-controls">
+
+                                <div class="first-input">
+                                    м<sup>2</sup>
+                                </div>
+
+                                <div class="second-input">
+                                    м<sup>2</sup>
+                                </div>
+
+                                <input type="text" class="js-input-from" value="0" />
+                                -
+                                <input type="text" class="js-input-to" value="0" />
+
+                            </div>
+                        </div>
+
+                        <div class="filter_title filter_type">
+                            <span class="sup_title">Тип постройки:</span>
+                            <ul>
+                                <li>
+                                    <input id="q1" type="checkbox">
+                                    <label for="q1">Дома</label>
+                                </li>
+                                <li>
+                                    <input id="q2" type="checkbox">
+                                    <label for="q2">Бани</label>
+                                </li>
+                                <li>
+                                    <input id="q3" type="checkbox">
+                                    <label for="q3">Беседки</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_title filter_type">
+                            <span>Этажность:</span>
+                            <ul>
+                                <li>
+                                    <input id="a1" type="checkbox">
+                                    <label for="a1">1</label>
+                                </li>
+                                <li>
+                                    <input id="a2" type="checkbox">
+                                    <label for="a2">2</label>
+                                </li>
+                                <li>
+                                    <input id="a3" type="checkbox">
+                                    <label for="a3">3</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_title filter_material">
+                            <span>Материал:</span>
+                            <ul>
+                                <li>
+                                    <input id="z1" type="checkbox">
+                                    <label for="z1">Профилированный брус</label>
+                                </li>
+                                <li>
+                                    <input id="z2" type="checkbox">
+                                    <label for="z2">Клееный брус</label>
+                                </li>
+                                <li>
+                                    <input id="z3" type="checkbox">
+                                    <label for="z3">Оцилиндрованное бревно</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cols">
+                            <div class="selected_projects">
+                                Выбрано - 51
+                            </div>
+                            <div class="btn1">
+                                <span>Сбросить</span> фильтр
+                            </div>
+                            <div class="btn1">
+                                <span>Подобрать</span> проекты
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 3 section-->
+
+    <section class="popular-projects done_projects-active  done_projects--active">
+        <div class="popular-projects-border">
+            <div class="container">
+                <div class="popular-projects-border--in"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="cols">
+                <div class="cart">
+                    <img src="img/projects_done/cart1.jpg" alt="">
+                    <div class="cart-bottom">
+
+                        <div class="h4">
+                            баня из
+                            <br>оцилиндрованного бревна
+                        </div>
+                        <p>
+                            Оцилиндрованное бревно,
+                            <br>диаметр - 300 мм.
+                        </p>
+                        <div class="cart-bottom-location cols">
+                            <span class="icon icon-flag"></span>
+                            <div class="country"> Самарская <br>область</div>
+                        </div>
+                        <a class="cart-bottom--arrow" href="">
+                            <div class="icon icon-left"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <img src="img/projects_done/cart2.jpg" alt="">
+                    <div class="cart-bottom">
+                        <div class="h4">
+                            храм
+                        </div>
+                        <p>
+                            Оцилиндрованное бревно,
+                            <br>диаметр - 300 мм.
+                        </p>
+                        <div class="cart-bottom-location cols">
+                            <span class="icon icon-flag"></span>
+                            <div class="country"> Нижегородская <br>область</div>
+                        </div>
+                        <a class="cart-bottom--arrow" href="">
+                            <div class="icon icon-left"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <img src="img/projects_done/cart3.jpg" alt="">
+                    <div class="cart-bottom">
+                        <div class="h4">
+                            ДОМ из
+                            <br>оцилиндрованного бревна
+                        </div>
+                        <p>
+                            диаметр - 300 мм.
+                        </p>
+                        <div class="cart-bottom-location cols">
+                            <span class="icon icon-flag"></span>
+                            <div class="country">Кировская <br>область</div>
+                        </div>
+                        <a class="cart-bottom--arrow" href="">
+                            <div class="icon icon-left"></div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="cart">
+                    <img src="img/projects_done/cart4.jpg" alt="">
+                    <div class="cart-bottom">
+                        <div class="h4">
+                            ДОМ из
+                            <br>оцилиндрованного бревна
+                        </div>
+                        <p>
+                            Оцилиндрованное бревно,
+                            <br>диаметр - 300 мм.
+                        </p>
+                        <div class="cart-bottom-location cols">
+                            <span class="icon icon-flag"></span>
+                            <div class="country"> Самарская <br>область</div>
+                        </div>
+                        <a class="cart-bottom--arrow" href="">
+                            <div class="icon icon-left"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <img src="img/projects_done/cart5.jpg" alt="">
+                    <div class="cart-bottom">
+                        <div class="h4">
+                            баня из
+                            <br>оцилиндрованного бревна
+                        </div>
+                        <p>
+                            диаметр - 300 мм.
+                        </p>
+                        <div class="cart-bottom-location cols">
+                            <span class="icon icon-flag"></span>
+                            <div class="country"> Кировская <br>область</div>
+                        </div>
+                        <a class="cart-bottom--arrow" href="">
+                            <div class="icon icon-left"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <img src="img/projects_done/cart6.jpg" alt="">
+                    <div class="cart-bottom">
+                        <div class="h4">
+                            храм
+                        </div>
+                        <p>
+                            Оцилиндрованное бревно,
+                            <br>диаметр - 300 мм.
+                        </p>
+                        <div class="cart-bottom-location cols">
+                            <span class="icon icon-flag"></span>
+                            <div class="country"> Нижегородская <br>область</div>
+                        </div>
+                        <a class="cart-bottom--arrow" href="">
+                            <div class="icon icon-left"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <img src="img/projects_done/cart7.jpg" alt="">
+                    <div class="cart-bottom">
+                        <div class="h4">
+                           храм
+                        </div>
+                        <p>
+                            Оцилиндрованное бревно,
+                            <br>диаметр - 300 мм.
+                        </p>
+                        <div class="cart-bottom-location cols">
+                            <span class="icon icon-flag"></span>
+                            <div class="country"> Нижегородская <br>область</div>
+                        </div>
+                        <a class="cart-bottom--arrow" href="">
+                            <div class="icon icon-left"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <img src="img/projects_done/cart8.jpg" alt="">
+                    <div class="cart-bottom">
+                        <div class="h4">
+                            баня из
+                            <br>оцилиндрованного бревна
+                        </div>
+                        <p>
+                            Оцилиндрованное бревно,
+                            <br>диаметр - 300 мм.
+                        </p>
+                        <div class="cart-bottom-location cols">
+                            <span class="icon icon-flag"></span>
+                            <div class="country"> Самарская <br>область</div>
+                        </div>
+                        <a class="cart-bottom--arrow" href="">
+                            <div class="icon icon-left"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <img src="img/projects_done/cart9.jpg" alt="">
+                    <div class="cart-bottom">
+                        <div class="h4">
+                            ДОМ из
+                            <br>оцилиндрованного бревна
+                        </div>
+                        <p>
+                           диаметр - 300 мм.
+                        </p>
+                        <div class="cart-bottom-location cols">
+                            <span class="icon icon-flag"></span>
+                            <div class="country"> Кировская <br>область</div>
+                        </div>
+                        <a class="cart-bottom--arrow" href="">
+                            <div class="icon icon-left"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="paginations cols">
+                <a href="/">1</a>
+                <a href="/">2</a>
+                <a href="/">3</a>
+                <a href="/">4</a>
+                <a href="/">5</a>
+                <a href="/">...</a>
+                <a href="">12</a>
+            </div>
+        </div>
+        <div class="popular-projects-border-bottom">
+            <div class="container">
+                <div class="popular-projects-border-bottom--in"></div>
+            </div>
+        </div>
+        <p class="popular-projects-p container">
+            Сегодня мы готовы взяться за реализацию проекта любого размера и сложности, прогарантировать его долговечность.
+            <br>Такой уверенности предшествовали долгий путь и больше 200 построенных.
+        </p>
+    </section>
+
+    <section class="info-blog">
+        <div class="container cols cols--stretch">
+            <div class="info-blog-left">
+                <div class="info-blog-left--title h1">
+                    Полезная
+                    информация
+                </div>
+
+                <div class="info-blog-left--top active" data-tab="1">
+                    Полезный выбор в деревянном домостроении
+                    <div class="border-left active"></div>
+                    <div class="info-blog-left--top-triangle cols">
+                        <div class="border1"></div>
+                        <div class="border2"></div>
+                        <div class="border3"></div>
+                    </div>
+                </div>
+
+                <div class="info-blog-left--top" data-tab="2">
+                    Усадка и растрескивание оцилиндрованного бревна
+                    <div class="border-left active"></div>
+                    <div class="info-blog-left--top-triangle cols">
+                        <div class="border1"></div>
+                        <div class="border2"></div>
+                        <div class="border3"></div>
+                    </div>
+                </div>
+
+                <div class="info-blog-left--top" data-tab="3">
+                    Недостатки домов из оцилиндрованного бревна и их минимизация
+                    <div class="border-left active"></div>
+                    <div class="info-blog-left--top-triangle cols">
+                        <div class="border1"></div>
+                        <div class="border2"></div>
+                        <div class="border3"></div>
+                    </div>
+                </div>
+                <a href="/" class="btn">
+                    Больше интересных материалов
+                </a>
+            </div>
+            <div class="info-blog-right">
+                <div class="info-blog-right--titel h1">
+                    блог
+                </div>
+                <div class="info-blog-right-first active" data-tab="1">
+                    <p>
+                        Сегодня мы готовы взяться за реализацию проекта любого размера и сложности, прогарантировать его долговечность. Такой уверенности предшествовали долгий путь и больше 200 построенных.
+                        Наша компания образована в 2003 году, за 14 лет поэтапно и в совершенстве освоены все аспекты производства материалов и строительства домов.
+                    </p>
+                    <a class="btn">
+                        Подробнее1
+                    </a>
+                </div>
+                <div class="info-blog-right-first" data-tab="2">
+                    <p>
+                        Сегодня мы готовы взяться за реализацию проекта любого размера и сложности, прогарантировать его долговечность. Такой уверенности предшествовали долгий путь и больше 200 построенных.
+                        Наша компания образована в 2003 году, за 14 лет поэтапно и в совершенстве освоены все аспекты производства материалов и строительства домов.
+                    </p>
+                    <a class="btn">
+                        Подробнее2
+                    </a>
+                </div>
+                <div class="info-blog-right-first" data-tab="3">
+                    <p>
+                        Сегодня мы готовы взяться за реализацию проекта любого размера и сложности, прогарантировать его долговечность. Такой уверенности предшествовали долгий путь и больше 200 построенных.
+                        Наша компания образована в 2003 году, за 14 лет поэтапно и в совершенстве освоены все аспекты производства материалов и строительства домов.
+                    </p>
+                    <a class="btn">
+                        Подробнее3
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

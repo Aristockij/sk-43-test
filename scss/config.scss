@@ -1,0 +1,63 @@
+@import "bourbon/bourbon";
+@import "mixins";
+
+$color0: #082319;
+$color1: #ffffff;
+$color2: #67544b;
+$color3: #656e4d;
+$color4: #aab394;
+$color5: #e4ddd4;
+$color6: #f8775b;
+$color7: #f8775b;
+$ts: 0.3s;
+$ts2: 0.6s;
+
+@include font-face("Bebas", '../font/BebasNeueBold', 700, normal, $file-formats: eot woff woff2 ttf svg);
+@include font-face("Bebas", '../font/BebasNeueRegular', 400, normal, $file-formats: eot woff woff2 ttf svg);
+@include font-face("Corbel", '../font/Corbel', 400, normal, $file-formats: eot woff woff2 ttf svg);
+@include font-face("Corbel", '../font/Corbel-Bold', 700, normal, $file-formats: eot woff woff2 ttf svg);
+@include font-face("Corbel", '../font/Corbel-BoldItalic', 700, italic, $file-formats: eot woff woff2 ttf svg);
+@include font-face("Corbel", '../font/CorbelLight', 300, normal, $file-formats: eot woff woff2 ttf svg);
+@include font-face("Corbel", '../font/CorbelLight-Italic', 300, italic, $file-formats: eot woff woff2 ttf svg);
+
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/icon/fontello/fontello.eot?53199875');
+  src: url('../font/icon/fontello/fontello.eot?53199875#iefix') format('embedded-opentype'),
+  url('../font/icon/fontello/fontello.woff2?53199875') format('woff2'),
+  url('../font/icon/fontello/fontello.woff?53199875') format('woff'),
+  url('../font/icon/fontello/fontello.ttf?53199875') format('truetype'),
+  url('../font/icon/fontello/fontello.svg?53199875#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font1: 'Corbel', sans-serif;
+$font2: 'Bebas', sans-serif;
+
+$screen_large: 1340px;
+$screen: 1150px;
+$tablet: 1050px;
+$mobile: 780px;
+$mobile_small: 480px; //550px
+$mobile_xsmall: 440px; //320px
+
+// easings
+$ease-cb: cubic-bezier(.4,0,.2,1);
+$ease-cb-2: cubic-bezier(.19,1,.22,1);
+$ease-cb-3: cubic-bezier(.77,0,.175,1);
+$ease-cb-4: cubic-bezier(.99,1,.92,1);
+//------------------------------
+//  nth-trans-delay()
+//  Transition Delay on nth-childs
+//  @param: $delay_items: number of nth-of-type items to create
+//  @param: $delay_time: transition-dealy value
+//-----------------------------
+@mixin nth-trans-delay($delay_items: 7, $delay_time: 0.2s){
+  @for $i from 1 through $delay_items {
+    &:nth-child(#{$i}) {
+      transition-delay: $delay_time * $i;
+    }
+  }
+}

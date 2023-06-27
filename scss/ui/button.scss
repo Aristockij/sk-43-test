@@ -1,0 +1,290 @@
+/*
+
+Buttons
+
+*/
+
+.btn {
+    position: relative;/*координаты?*/
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    font-family: $font1;/*corbel*/
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 13px 20px;/**/
+    white-space: nowrap;
+    border-radius: 0px; /*check*/
+    height: 50px;/*check*/
+    min-width: 240px;/*check*/
+    color: $color1 !important;
+    -webkit-appearance: none;
+    background: transparent;  /*$color4;*/  /*переназначить?*/
+    user-select: none;
+    backface-visibility: hidden;
+    @include box-sizing(border-box);
+    transition: all $ts;
+    cursor: pointer !important;
+    border: 1px solid $color1;
+
+
+
+    &:before{
+        content: '';
+        position: absolute;
+        left: -1px; top: 50%;
+        transform: translateY(-7px);
+        border: 7px solid transparent; border-left: 7px solid $color3;
+    }//кривой треугольник//
+
+    &:hover{
+        border: 2px solid $color3;
+        background: $color3 !important;
+           }
+
+
+    @media (max-width: $mobile_small) {
+    }
+
+    &::-moz-focus-inner {
+        padding: 0 !important;
+        border: 0 none !important;
+    }
+
+    &:hover,&:active,&:focus,.touched {
+
+    }
+
+    &:active {
+        text-decoration: none;
+    }
+
+    &[disabled],
+    &.disabled {
+        background-color: #ebebeb;
+        color: #888!important;
+        border-color: inherit;
+        border-color: currentColor;
+        opacity: 1;
+        cursor: default;
+        cursor: not-allowed;
+    }
+
+    & > input[type='file'] {
+        @include opacity(0);
+        font-size: 120px;
+        position: absolute;
+        top: -20px;
+        right: -10px;
+        vertical-align: top;
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    &--wide{
+        min-width: 300px;
+    }
+
+    &--white{
+        border: 1px solid $color5;
+        background: $color1 !important;
+        color: $color0 !important;
+        z-index: 2;
+
+        &:hover{
+            border: 1px solid $color4;
+            background: $color4 !important;
+            color: $color1 !important;
+        }
+    }
+
+    &--arr{
+        &:after{
+        content: '\e808';
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 8px;
+        position: relative;
+        color:#b4b4b4;
+        font-size: 9px;
+        font-family: fontello;
+            transition: $ts;
+        }
+
+        &:hover{
+            &:after{
+                color:$color1;
+                transform: translateX(3px);
+            }
+        }
+    }
+
+
+
+    &--no-hover {
+
+        &:hover {
+            color: inherit !important;
+            background: inherit!important;
+            border-color: inherit;
+            border-color: currentColor;
+        }
+    }
+
+    &--fullwidth {
+        width: 100%;
+        @include margin-top(20px);
+    }
+
+}
+
+
+.btn1 {
+    position: relative;/*координаты?*/
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    font-family: $font1;/*corbel*/
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 13px 20px;/**/
+    white-space: nowrap;
+    border-radius: 0px; /*check*/
+    height: 50px;/*check*/
+    min-width: 240px;/*check*/
+    color: $color2 !important;
+    -webkit-appearance: none;
+    background: transparent; /*$color4; переназначить?*/
+    user-select: none;
+    backface-visibility: hidden;
+    @include box-sizing(border-box);
+    transition: all $ts;
+    cursor: pointer !important;
+    border: 1px solid $color2;
+
+
+
+    &:before{
+        content: '';
+        position: absolute;
+        left: -1px; top: 50%;
+        transform: translateY(-7px);
+        border: 7px solid transparent; border-left: 7px solid $color3;
+    }/*кривой треугольник*/
+
+    &:hover {
+        border: 2px solid $color3;
+        background: $color3 !important;
+        color:$color1 !important;
+    }
+
+
+    @media (max-width: $mobile_small) {
+    }
+
+    &::-moz-focus-inner {
+        padding: 0 !important;
+        border: 0 none !important;
+    }
+
+    &:hover,&:active,&:focus,.touched {
+
+    }
+
+    &:active {
+        text-decoration: none;
+    }
+    &[disabled],
+
+    &.disabled {
+        background-color: #ebebeb;
+        color: #888!important;
+        border-color: inherit;
+        border-color: currentColor;
+        opacity: 1;
+        cursor: default;
+        cursor: not-allowed;
+    }
+
+    & > input[type='file'] {
+        @include opacity(0);
+        font-size: 120px;
+        position: absolute;
+        top: -20px;
+        right: -10px;
+        vertical-align: top;
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    &--wide{
+        min-width: 300px;
+    }
+
+    &--white{
+        border: 1px solid $color5;
+        background: $color1 !important;
+        color: $color0 !important;
+        z-index: 2;
+
+        &:hover{
+            border: 1px solid $color4;
+            background: $color4 !important;
+            color: $color1 !important;
+        }
+    }
+
+    &--arr{
+        &:after{
+            content: '\e808';
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 8px;
+            position: relative;
+            color:#b4b4b4;
+            font-size: 9px;
+            font-family: fontello;
+            transition: $ts;
+        }
+
+        &:hover{
+            &:after{
+                color:$color1;
+                transform: translateX(3px);
+            }
+        }
+    }
+
+
+
+    &--no-hover {
+
+        &:hover {
+            color: inherit !important;
+            background: inherit!important;
+            border-color: inherit;
+            border-color: currentColor;
+        }
+    }
+
+    &--fullwidth {
+        width: 100%;
+        @include margin-top(20px);
+    }
+
+}
+
+
+.dbl-btn{
+    .btn:not(.btn--white){
+        margin-left: -40px;
+        padding-left:60px;
+        padding-right:30px;
+    }
+}
+
+

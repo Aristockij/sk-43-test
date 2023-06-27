@@ -1,0 +1,45 @@
+.popup{
+  display: block;
+  min-width: 380px;
+  max-width: 380px;
+  padding: 40px 45px;
+  border-radius: 8px;
+  background: #fff;
+
+
+  &-title{
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 16px;
+      background: $color6;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -45px;
+    }
+  }
+
+  &-form{
+    margin: auto;
+
+    .form--items{
+      max-width: 210px;
+      padding: 0;
+      margin: auto;
+    }
+
+    .checkbox{
+      font-size: 11px;
+      margin: 20px 0;
+    }
+    .form--actions{
+      text-align: center;
+    }
+  }
+}

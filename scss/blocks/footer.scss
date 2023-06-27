@@ -1,0 +1,121 @@
+.footer{
+  padding-top: 65px;
+  background: $color2;
+  position: relative;
+  color: $color1;
+  padding-bottom: 115px;
+  @media (max-width: $screen) {
+    padding-top: 25px;
+  }
+
+
+  .footer-top{
+    position: relative;
+    padding-bottom: 45px;
+    @media (max-width: $screen) {
+      padding-bottom: 25px;
+    }
+    &--img{
+      margin-right: 100px;
+      @media (max-width: 1270px) {
+        margin-right:20px;
+      }
+      @media (max-width: $screen) {
+        margin-right:10px;
+      }
+    }
+    &--menu{
+      flex: 1;
+      a{
+        color: $color1;
+        text-decoration: none;
+        @media (max-width: 1170px) {
+          font-size: 14px;
+        }
+        @media (max-width: $tablet) {
+         display: none;
+        }
+      }
+    }
+    &:before{
+      content: '';
+      height: 1px;
+      background-color: $color4;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      opacity: .3;
+    }
+  }
+  .footer-bottom{
+    &--left{
+      padding-top: 55px;
+      font-size: 14px;
+      font-weight: 300;
+      @media (max-width: $tablet) {
+        padding-top: 25px;
+      }
+      &-contacts{
+        padding-top: 25px;
+        a{
+          position: relative;
+          color: $color1;
+          text-decoration: none;
+          font-weight: 300;
+        }
+      }
+    }
+    &--right{
+      padding-top: 55px;
+      font-weight: 300;
+      font-size: 14px;
+      @media (max-width: $tablet) {
+        padding-top: 25px;
+        right: 0;
+      }
+      @media (max-width: $mobile_small) {
+        padding-top: 70px;
+        position: relative;
+        right: -40%;
+        text-align: right;
+        //right: -130px;
+      }
+
+      &>div{
+        @media (max-width: $mobile) {
+          flex-direction: column;
+          align-items: flex-end;
+        }
+      }
+      a{
+        .icon-facebook-2{
+          font-size: 25px;
+        }
+        span{
+          color: $color1;
+          font-size: 30px;
+          &:before{
+            margin: 0;
+          }
+          //padding-left: 10px;
+          @media (max-width: $mobile) {
+            padding-left: 5px;
+          }
+        }
+        .icon-facebook-2{
+          top: -1px;
+        }
+      }
+      &-img{
+        padding-top: 20px;
+        text-align: right;
+      }
+    }
+    &--rules{
+      padding-left: 25px;
+      @media (max-width: $mobile) {
+        padding-top: 10px;
+      }
+    }
+  }
+}
